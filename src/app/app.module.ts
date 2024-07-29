@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PetInfoComponent } from './components/pet-info/pet-info.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PetInfoComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

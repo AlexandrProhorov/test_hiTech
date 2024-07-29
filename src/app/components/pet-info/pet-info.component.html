@@ -1,0 +1,8 @@
+<div class="pet-info" *ngIf="petInfo">
+    <p>Category: {{petInfo.category.name}}</p>
+    <p>Name: {{petInfo.name}}</p>
+    <p>id: {{petInfo.id}}</p>
+    <p>status: {{petInfo.status}}</p>
+    <p>photourl:{{petInfo.photoUrls}}</p>
+    <button class="pet-info__button" (click)="onClose()">close</button>
+</div>

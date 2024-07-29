@@ -1,0 +1,50 @@
+.body {
+    display: flex;
+    flex-direction: row;
+}
+
+.pet-table {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: fit-content;
+    border: 1px solid black;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+    
+.pet-table__header {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin: 2px 2px;
+}
+
+.pet-table__cell--title,
+.pet-table__cell {
+    max-width: 170px;
+    min-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: 1px solid black;
+    height: 40px;
+    cursor: pointer;
+}
+
+.pet-table__cell--title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.resizer {
+    height: 600px;
+    width: 14px;
+    background-color: red;
+}
+
+.pet-info {
+    width: 50%;
+}

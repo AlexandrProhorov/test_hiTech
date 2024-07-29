@@ -1,0 +1,12 @@
+.pet-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+
+.pet-info__button {
+    width: 80px;
+}
