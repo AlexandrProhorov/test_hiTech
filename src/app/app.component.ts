@@ -17,14 +17,14 @@ export class AppComponent implements OnInit {
   constructor(private petService: PetService) {}
   
   ngOnInit() {
-    this.petService.getPetsByStatus('available').subscribe(
-      (data: Pet[]) => {
+    this.petService.getPetsByStatus('available').subscribe({
+      next: (data: Pet[]) => {
         this.pets = data;
       },
-      (error: HttpErrorResponse) => {
+      error: (error: HttpErrorResponse) => {
         console.error('Ошибка при получении питомцев:', error);
       }
-    );
+    });
   }
 
   onPetClicked(pet: Pet){
